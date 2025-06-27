@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zas!</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <img src="imagenes/08.webp" alt="Snow" style="width:100%;">
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</di>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+</div>
+      <a class="navbar-brand" href="#">Zas!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#" id="cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal">
+              <i class="bi bi-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <img src ="imagenes/08.webp" class="card-img-top" >
+      <h1 class="display-4"> Zas! <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+      </head>
+      <body>
+        
+      </body>
+      </html></h1>
+      <p class="lead">"No solo es hielo es la fiesta en cubo"</p>
+      <a href="#products" class="btn btn-light btn-lg">Ver Productos</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">¿Quiénes Somos?</h2>
+      <p>Somos una empresa dedicada a ofrecer hielos de alta calidad para realzar la experiencia de tus licores favoritos. Nuestros productos están diseñados para mantener tus bebidas frías sin diluir su sabor.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Productos</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imagenes/07.jpg" class="card-img-top" alt="Cubos de Hielo">
+            <div class="card-body">
+              <h5 class="card-title">Zas! Ron</h5>
+              <p class="card-text">Perfectos para cualquier tipo de bebida.</p>
+              <a href="#" class="btn btn-primary buy-btn" data-product="Zas! Ron">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/hielo-esfera.jpg" class="card-img-top" alt="Esferas de Hielo">
+            <div class="card-body">
+              <h5 class="card-title">Zas! Singani</h5>
+              <p class="card-text">Ideales para licores premium.</p>
+              <a href="#" class="btn btn-primary buy-btn" data-product="Zas! Singani">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/hielo-cristal.jpg" class="card-img-top" alt="Hielo Cristalino">
+            <div class="card-body">
+              <h5 class="card-title">Zas! Vodka</h5>
+              <p class="card-text">La máxima pureza para tus bebidas.</p>
+              <a href="#" class="btn btn-primary buy-btn" data-product="Zas! Vodka">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Contáctanos</h2>
+      <p>¿Tienes preguntas? Escríbenos y te responderemos lo antes posible.</p>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Zas!. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Modal Carrito -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Resumen de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" id="cart-summary">
+          Tu carrito está vacío.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="checkout-btn">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="src/scripts/app.js"></script>
+</body>
+</html>
