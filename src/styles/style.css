@@ -107,3 +107,23 @@ footer {
   border-radius: 0.5rem;
   transition: background 0.2s, color 0.2s;
 }
+
+.logo-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+  z-index: 3;
+}
+
+.logo-superpuesto-derecha {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+  z-index: 3;
+}
