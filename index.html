@@ -17,19 +17,23 @@
       <!-- Enlaces a la derecha -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link nav-orange fs-5" href="#about">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link nav-orange fs-5" href="#products">Productos</a></li>
+          <li class="nav-item"><a class="nav-link nav-orange fs-5" href="#contact">Contacto</a></li>
           <li class="nav-item">
-            <a class="nav-link position-relative" href="#" id="cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal">
-              <i class="bi bi-cart"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">0</span>
+            <a class="nav-link position-relative carrito-notable nav-orange fs-5 px-2" href="#" id="cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal" title="Ver carrito" style="display: flex; align-items: center;">
+              <i class="bi bi-cart" style="font-size: 1rem; color: #dc8a0f; vertical-align: middle;"></i>
+              <span class="position-absolute" style="top: 0.1rem; right: -0.7rem; font-size: 0.7rem;"
+                id="cart-count"
+                class="badge rounded-pill bg-warning text-dark border border-2 border-white shadow">
+                0
+              </span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Logo centrado absolutamente -->
-      <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">Z a s !</a>
+      <a class="navbar-brand position-absolute top-50 start-50 translate-middle text-orange" href="#">Z a s !</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,9 +83,8 @@
         </div>
         <div class="col-md-4">
           <div class="card bg-dark text-white">
-            <img src="assets/images/hielo-esfera.jpg" class="card-img-top" alt="Esferas de Hielo">
+            <img src="imagenes/10.jpg" class="card-img-top" alt="Esferas de Hielo">
             <div class="card-body">
-              <h5 class="card-title">Zas! Singani</h5>
               <p class="card-text">Ideales para licores premium.</p>
               <a href="#" class="btn btn-outline-light buy-btn hov-orange" data-product="Zas! Singani">Comprar</a>
             </div>
@@ -89,7 +92,7 @@
         </div>
         <div class="col-md-4">
           <div class="card bg-dark text-white">
-            <img src="assets/images/hielo-cristal.jpg" class="card-img-top" alt="Hielo Cristalino">
+            <img src="assets/images/hielo-cristalino.jpg" class="card-img-top" alt="Hielo Cristalino">
             <div class="card-body">
               <h5 class="card-title">Zas! Vodka</h5>
               <p class="card-text">La máxima pureza para tus bebidas.</p>
@@ -128,22 +131,22 @@
     <p>&copy; 2025 Zas!. Todos los derechos reservados.</p>
     <ul class="list-inline mb-0">
       <li class="list-inline-item">
-        <a href="https://www.facebook.com/profile.php?id=61577860950485&locale=es_LA" target="_blank" class="text-white hov-orange fs-4 px-2" title="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=61577860950485&locale=es_LA" target="_blank" class="text-white fs-2 px-2 social-icon" title="Facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
       <li class="list-inline-item">
-        <a href="https://www.instagram.com/is_zas_?fbclid=IwY2xjawLNp4ZleHRuA2FlbQIxMABicmlkETFuTmo0OXphMHZiWWdWQ1RlAR5y7MPD03kujDwrWE6JsFS3bscxLlpsOmnB2U1PjkwMxpRNRc6GbtlsuC13uQ_aem_9Um77v_nW1dXelcuCDj1Ng" target="_blank" class="text-white text-orange fs-4 px-2" title="Instagram">
+        <a href="https://www.instagram.com/is_zas_?fbclid=IwY2xjawLNp4ZleHRuA2FlbQIxMABicmlkETFuTmo0OXphMHZiWWdWQ1RlAR5y7MPD03kujDwrWE6JsFS3bscxLlpsOmnB2U1PjkwMxpRNRc6GbtlsuC13uQ_aem_9Um77v_nW1dXelcuCDj1Ng" target="_blank" class="text-white fs-2 px-2 social-icon" title="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
       </li>
       <li class="list-inline-item">
-        <a href="https://x.com/is_zas_?fbclid=IwY2xjawLNp7ZleHRuA2FlbQIxMABicmlkETFuTmo0OXphMHZiWWdWQ1RlAR6DCZxx_P_n9l0qUSatrLLBXP7Jzls8bvMSQWslfuT77Cxoj-01Rclg3-14gA_aem_ymA-IPNG3lF1WRhzpZbpSg" target="_blank" class="text-white text-orange fs-4 px-2" title="Twitter">
+        <a href="https://x.com/is_zas_?fbclid=IwY2xjawLNp7ZleHRuA2FlbQIxMABicmlkETFuTmo0OXphMHZiWWdWQ1RlAR6DCZxx_P_n9l0qUSatrLLBXP7Jzls8bvMSQWslfuT77Cxoj-01Rclg3-14gA_aem_ymA-IPNG3lF1WRhzpZbpSg" target="_blank" class="text-white fs-2 px-2 social-icon" title="Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
       <li class="list-inline-item">
-        <a href="https://www.tiktok.com/@is_zas?fbclid=IwY2xjawLNp7RleHRuA2FlbQIxMABicmlkETFuTmo0OXphMHZiWWdWQ1RlAR4QnhhBjVyrhyexv79z83vqVTHHxtgN2bKlFeiM3T568TElJkLHr2edbxbF_A_aem__FUpqVsOGvwE9yTOF_iXqg" target="_blank" class="text-white text-orange fs-4 px-2" title="TikTok">
+        <a href="https://www.tiktok.com/@is_zas?fbclid=IwY2xjawLNp7RleHRuA2FlbQIxMABicmlkETFuTmo0OXphMHZiWWdWQ1RlAR4QnhhBjVyrhyexv79z83vqVTHHxtgN2bKlFeiM3T568TElJkLHr2edbxbF_A_aem__FUpqVsOGvwE9yTOF_iXqg" target="_blank" class="text-white fs-2 px-2 social-icon" title="TikTok">
           <i class="fab fa-tiktok"></i>
         </a>
       </li>

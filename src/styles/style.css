@@ -81,3 +81,29 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.social-icon:hover {
+  color: #dc8a0f !important; /* Naranja, puedes cambiarlo si quieres */
+  transition: color 0.2s;
+}
+.carrito-notable:hover i {
+  color: #fff176 !important; /* Amarillo claro al pasar el mouse */
+  transition: color 0.2s;
+}
+.carrito-notable #cart-count {
+  animation: resaltarCarrito 1s infinite alternate;
+}
+@keyframes resaltarCarrito {
+  from { box-shadow: 0 0 0 0 #dc8a0f88; }
+  to   { box-shadow: 0 0 10px 4px #dc8a0f88; }
+}
+
+.nav-orange {
+  color: #dc8a0f !important;
+}
+.nav-orange:hover, .nav-orange.active {
+  color: #fff !important;
+  background-color: #dc8a0f !important;
+  border-radius: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
