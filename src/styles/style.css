@@ -127,3 +127,12 @@ footer {
   height: auto;
   z-index: 3;
 }
+
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active {
+  background-color: #dc8a0f !important;
+  color: #fff !important;
+  border-color: #dc8a0f !important;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
