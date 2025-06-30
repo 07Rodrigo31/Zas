@@ -153,10 +153,3 @@ footer {
   border-color: #dc8a0f !important;
   transition: background 0.2s, color 0.2s, border 0.2s;
 }
-
-img,
-.card-img-top {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
