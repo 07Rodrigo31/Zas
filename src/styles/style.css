@@ -108,24 +108,41 @@ footer {
   transition: background 0.2s, color 0.2s;
 }
 
-.logo-superpuesto {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  width: 300px;
-  height: auto;
-  z-index: 3;
-}
-
+.logo-superpuesto,
 .logo-superpuesto-derecha {
   position: absolute;
   top: 50%;
-  right: 20px;
   transform: translateY(-50%);
-  width: 300px;
+  width: 22vw;           /* Relativo al ancho de la ventana */
+  max-width: 220px;      /* No más grande de 220px */
+  min-width: 80px;       /* No más pequeño de 80px */
   height: auto;
   z-index: 3;
+  pointer-events: none;  /* No bloquean clics en móviles */
+}
+
+.logo-superpuesto {
+  left: 2vw;
+}
+
+.logo-superpuesto-derecha {
+  right: 2vw;
+}
+
+@media (max-width: 768px) {
+  .logo-superpuesto,
+  .logo-superpuesto-derecha {
+    width: 18vw;
+    max-width: 90px;
+    min-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-superpuesto,
+  .logo-superpuesto-derecha {
+    display: none;
+  }
 }
 
 .btn-outline-light:hover,
@@ -135,4 +152,11 @@ footer {
   color: #fff !important;
   border-color: #dc8a0f !important;
   transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+img,
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
